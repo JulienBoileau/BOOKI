@@ -1,0 +1,828 @@
+/* POLICE */
+
+	header, body
+	{
+		font-family: 'Raleway', sans-serif;
+		font-weight: 500;
+	}
+
+	h2
+	{
+		font-size: 22px;
+	}
+
+
+
+
+ /********** HEADER **********/
+
+ /*LOGO ET NAVIGATION*/
+
+
+header
+{
+	width: 72%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+}
+
+.logo img
+{
+	height: 45px;
+	width: 95px;
+	position: absolute;
+	margin-top: 35px;
+	margin-left: 60px;
+}
+
+.Menu ul
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.Menu li 
+{
+	margin-top: 25px;
+	padding-left:  70px;
+	list-style: none;
+
+}
+
+.Hébergements, .Activités
+{
+	text-decoration: none;
+	box-shadow: none;
+	color: black;
+}
+
+
+.Menu a:hover
+{
+	color: #0065FC;
+	border-top: 2px #0065FC solid;
+	padding-top: 47px;
+}
+
+
+/*HEADER RESPONSIVE TABLETTE*/
+
+@media screen and (min-width: 769px) and (max-width: 992px)
+{
+	.logo img
+	{
+		width: 127px;
+		height: 60px;
+	}
+
+	header
+	{
+		width: 100%;
+		font-size: 22px;
+	}
+
+	.Menu
+	{
+		margin-right: 10%;
+	}
+
+	.Menu a:hover
+	{
+		padding-top: 53px;
+	}
+}
+
+
+/*HEADER RESPONSIVE MOBILE*/
+
+@media screen and (max-width: 768px)
+{
+
+	header
+	{
+		display: flex;
+		flex-wrap: wrap;
+		width: 80%;
+	}
+
+	.logo
+	{
+		margin-left: 35%;
+		
+	}
+
+	.logo img
+	{
+		width: 127px;
+		height: 60px;
+		margin-top: 12px;
+	}
+
+	.Menu
+	{
+		margin-top: 80px;
+		font-size: 22px;
+	}
+
+	.Menu li
+	{
+		margin-left: -60px;
+		padding-right: 100px;
+		border-bottom: 4px #F2F2F2 solid;
+		padding-bottom: 12px;
+	}
+
+	.Menu a:hover
+	{
+		border-top: 0;
+		border-bottom: 4px #0065FC solid;
+		padding-bottom: 12px;
+	}
+
+}
+
+
+	/*FIN DU HEADER*/
+
+	
+	
+	/********* BODY **********/
+
+	/*PRESENTATION*/
+
+.Présentation
+{
+	margin-left: 45px;
+	margin-top: 50px;
+	line-height: 12px;
+}
+
+	/*BARRE DE RECHERCHE*/
+
+#logoposition
+{
+	position: absolute;
+	margin-left: 48px;
+	background-color: F2F2F2;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	height: 50px;
+	width:  50px;
+}
+
+.Recherche svg
+{
+	margin-left: 15px;
+	margin-top: 15px;
+}	
+
+form
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: 95px;
+	margin-top: 25px;
+}
+
+#champmobile
+{
+	display: none;
+}
+
+#champ input
+{
+	border-width: 1px;
+	border-color: #F2F2F2;
+	box-shadow: none;
+	width: 240px;
+}
+
+#bouton input
+{
+	display: inline-block;
+	width: 130px ;
+	background-color:#0065FC;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-style: none;
+	color: white;
+	font-weight: bold;
+}
+
+#logoloupe
+{
+	display: none;
+}
+
+	/*FILTRES*/
+
+.Filtres a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.Filtres a:hover
+{
+	color: #0065FC;
+	font-size: 21px;
+}
+
+.Filtres ul
+{
+	display: flex;
+	font-weight: 700;
+	font-size: 19px;
+	margin-top: 35px;
+	margin-left: 10px;
+	width: 950px;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+}
+
+#Filtres
+{
+	padding-top: 15px;
+	padding-right: 20px;
+}
+
+#Économique, #Familial, #Romantique, #Animauxautorisés
+{
+	border: 3px #F2F2F2 solid;
+	border-radius: 50px;
+	text-align: right;
+	height: 35px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 22px;
+}
+
+#Économique
+{
+	width:  160px;
+}
+
+#logoéconomiqueXL, #logofamilialXL, #logoromantiqueXL, #logoanimauxautorisésXL
+{
+	display: none;
+}
+
+#logoéconomique
+{
+	position: absolute;
+	margin-left: 83px;
+	padding-top: 25px;
+	text-align: center;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-radius: 50px;
+	height: 30px;
+	width: 55px;
+}
+
+#Familial
+{
+	width:  120px;
+}
+
+#logofamilial
+{
+	position: absolute;
+	margin-left: 295px;
+	padding-top: 25px;
+	text-align: center;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-radius: 50px;
+	height: 30px;
+	width: 55px;
+}
+
+#Romantique
+{
+	width:  160px;
+}
+
+#logoromantique
+{
+	position: absolute;
+	margin-left: 465px;
+	padding-top: 25px;
+	text-align: center;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-radius: 50px;
+	height: 30px;
+	width: 55px;
+}
+
+#Animauxautorisés
+{
+	width: 230px;
+}
+
+#logoanimauxautorisés
+{
+	position: absolute;
+	margin-left: 678px;
+	padding-top: 25px;
+	text-align: center;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-radius: 50px;
+	height: 30px;
+	width: 55px;
+}
+
+#logoanimauxautoriséstablette, #Animauxautoriséstablette
+{
+	display: none;
+}
+
+
+	/*PHRASE INFORMATION*/
+
+.Phraseinformation i
+{
+	position: absolute;
+	margin-left: 60px;
+	margin-top: -2px;
+	padding-left: 7px;
+	color: #0065FC;
+	border: 2px #F2F2F2 solid;
+	border-radius: 50px;
+	height: 20px;
+	width: 13px;
+}
+
+	/***SECTION***/
+
+section
+{
+	display: flex;
+	flex-direction: row;
+}
+
+	/*ANNONCES HEBERGEMENTS*/
+
+.Phraseinformation p
+{
+	margin-top: 30px;
+	margin-left: 92px;
+}
+
+.Annonceshébergements
+{
+	margin-left: 45px;
+	margin-top: 35px;
+	height: 640px;
+	width: 870px;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+}
+
+.Photoshébergements
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.Photoshébergements a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.Annonceshébergements p, .Populaires p
+{
+	padding-top: 20px;
+	padding-left: 30px;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.Annonceshébergements figcaption
+{
+	padding-top: 6px;
+	padding-left: 6px;
+	line-height: 22px;
+}
+
+.Deuxièmelignephoto
+{
+	font-size: 14px;
+}
+
+.pic1
+{
+	width: 235px;
+	height: 200px;
+	margin-left: 35px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 1px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic2
+{
+	width: 235px;
+	height: 200px;
+	margin-left: -5px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 1px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic3
+{
+	width: 235px;
+	height: 200px;
+	margin-left: -5px;
+	margin-right: 40px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 1px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic4
+{
+	width: 235px;
+	height: 200px;
+	margin-left: 35px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 1px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic5
+{
+	width: 235px;
+	height: 200px;
+	margin-left: -5px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 1px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic6
+{
+	width: 235px;
+	height: 200px;
+	margin-left: -5px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 1px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic1 img, .pic2 img, .pic3 img, .pic4 img, .pic5 img, .pic6 img
+{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.étoilegrise
+{
+	color: #F2F2F2;
+}
+
+
+.étoiles
+{
+	padding-top: 10px;
+	color: #0065FC;
+}
+
+#Afficherplus p
+{
+	font-size: 18px;
+	padding-top: 2px;
+	padding-left: 38px;
+}
+
+	/*LES PLUS POPULAIRES*/
+
+.Populaires
+{
+	margin-left: 45px;
+	margin-top: 35px;
+	height: 640px;
+	width: 400px;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+}
+
+#étoilepopulaire
+{
+	margin-left: 340px;
+	margin-top: -35px;
+}
+
+
+
+
+
+
+	/*BODY RESPONSIVE TABLETTE*/
+
+@media screen and (min-width: 769px) and (max-width: 992px)
+{
+	.Présentation h2
+	{
+		font-size: 26px;
+	}
+
+	.Présentation p
+	{
+		font-size: 20px;
+	}
+
+	#Économique
+	{
+		position: absolute;
+		margin-left: 83px;
+	}
+
+	#Familial
+	{
+		position: absolute;
+		margin-left: 295px;
+	}
+
+	#Romantique
+	{
+		position: absolute;
+		margin-left: 465;
+	}
+
+	#logoanimauxautorisés, #Animauxautorisés
+	{
+		display: none;
+	}
+
+	#logoanimauxautoriséstablette
+	{
+		display: flex;
+		position: absolute;
+		margin-top: 80px;
+		margin-left: 85px;
+		padding-left: 14px;
+		padding-top: 25px;
+		color: #0065FC;
+		background-color: #DEEBFF;
+		border-radius: 50px;
+		height: 29px;
+		width: 42px;
+	}
+
+	#Animauxautoriséstablette
+	{
+		display: flex;
+		position: absolute;
+		margin-top: 78px;
+		margin-left: 83px;
+		border: 3px #F2F2F2 solid;
+		border-radius: 50px;
+		text-align: right;
+		height: 35px;
+		width: 190px;
+		padding-top: 18px;
+		padding-left: 65px;
+	}
+
+	.Phraseinformation p
+	{
+		margin-top: 130px;
+	}
+
+	.Phraseinformation i
+	{
+		margin-left: 50px;
+	}
+
+
+}
+
+
+
+	/* BODY RESPONSIVE MOBILE*/
+
+@media screen and (max-width: 768px)
+{
+	h2
+	{
+		font-size: 30px;
+		line-height: 35px;
+	}
+
+	.Présentation p
+	{
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	#champ
+	{
+		display: none;
+	}
+
+	#champmobile
+	{
+		display: flex;
+		margin-top: 20px;
+		height: 65px;
+		width: 350px;
+	}
+
+	#champmobile input
+	{
+		font-size: 24px;
+		border-color: F2F2F2;
+		border-width: 1px;
+	}
+
+	#bouton
+	{
+		display: none;
+	}
+
+	#logoposition
+	{
+		margin-top: 20px;
+		margin-left: 32px;
+		height: 65px;
+		width: 65px;
+	}
+
+	#logoposition svg
+	{
+		margin-top: 22px;
+		margin-left: 20px;
+	}
+
+	#logoloupe
+	{
+		display: flex;
+		position: absolute;
+		margin-top: 20px;
+		margin-left: 300px;
+		color: #FFFFFF;
+		background-color: #0065FC;
+		border-radius: 20px;
+		width: 65px;
+		height: 65px;
+	}
+
+	#logoloupe svg
+	{
+		position: relative;
+		margin-left: 20px;
+		margin-top: 17px;
+	}
+
+	#Filtres
+	{
+		font-size: 25px;
+		margin-bottom: 15px;
+		margin-left: -10px;
+	}
+
+	#Économique, #Romantique
+	{
+		margin-bottom: 15px;
+		margin-left: -10px;
+		height: 45px;
+		width: 200px;
+	}
+
+	#Familial
+	{
+		position: absolute;
+		margin-top: 60px;
+		margin-left: 240px;
+		height: 45px;
+		width: 140px;
+	}
+
+	#Animauxautorisés
+	{
+		margin-bottom: 15px;
+		margin-left: -10px;
+		height: 45px;
+		width: 260px;
+	}
+
+	.Filtres ul
+	{
+		display: flex;
+		flex-direction: column;
+		margin-left: 5px;
+		font-size: 23px;
+	}
+
+	#logoéconomique, #logofamilial, #logoromantique, #logoanimauxautorisés
+	{
+		display: none;
+	}
+
+
+	#logoéconomiqueXL
+	{
+		display: flex;
+		position: absolute;
+		margin-top: 60px;
+		margin-left: -10px;
+		padding-left: 15px;
+		padding-top: 32px;
+		color: #0065FC;
+		background-color: #DEEBFF;
+		border-radius: 50px;
+		height: 32px;
+		width: 48px;
+	}
+
+	#logofamilialXL
+		{
+		display: flex;
+		position: absolute;
+		margin-top: 60px;
+		margin-left: 240px;
+		padding-left: 18px;
+		padding-top: 32px;
+		color: #0065FC;
+		background-color: #DEEBFF;
+		border-radius: 50px;
+		height: 32px;
+		width: 46px;
+	}
+
+	#logoromantiqueXL
+	{
+		display: flex;
+		position: absolute;
+		margin-top: 142px;
+		margin-left: -10px;
+		padding-left: 14px;
+		padding-top: 32px;
+		color: #0065FC;
+		background-color: #DEEBFF;
+		border-radius: 50px;
+		height: 32px;
+		width: 49px;
+	}
+
+	#logoanimauxautorisésXL
+	{
+		display: flex;
+		position: absolute;
+		margin-top: 224px;
+		margin-left: -10px;
+		padding-left: 14px;
+		padding-top: 32px;
+		color: #0065FC;
+		background-color: #DEEBFF;
+		border-radius: 50px;
+		height: 32px;
+		width: 49px;
+	}
+
+	.Phraseinformation p
+	{
+		margin-top: 40px;
+		margin-left: 72px;
+		font-size: 22px;
+	}
+
+	.Phraseinformation i
+	{
+		margin-left: 25px;
+		font-size: 22px;
+		padding-left: 14px;
+		padding-top: 5px;
+		height: 30px;
+		width: 20px;
+	}
+
+}
+

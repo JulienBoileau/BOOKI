@@ -1,0 +1,121 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<style type="text/css">
+   			input {font-weight:bold; font-family: 'Raleway'; font-size: 18px;}
+		</style>
+		<script src="https://kit.fontawesome.com/5b6670eb09.js" crossorigin="anonymous"></script>
+		<title>Booki</title>
+	</head>
+
+	
+	<!- HEADER - LOGO ET NAVIGATION -->
+
+	<header>
+		<div class="logo">
+  			<img src="logo/Booki.png" alt="logo de Booki"/>
+  		</div>
+		<div class="Menu">
+			<nav>
+				<ul>
+					<li><a href="#HébergementsàMarseille" class="Hébergements">Hébergements</a></li>
+					<li><a href="#Activités" class="Activités">Activités</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<body>
+
+	<!- BODY -->
+
+	<!- PRESENTATION -->
+	
+		<div class="Présentation">
+			<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+			<p>En plein centre ville ou en pleine nature</p>
+		</div>
+
+	<!- BARRE DE RECHERCHE -->	
+
+		<div class="Recherche">
+			<div id="logoposition"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+  									<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></div>
+			<form method="post" action="traitement.php">
+				<p>
+					<div id="champ"><input type="text" size="25" style="height: 50px" name="ville" value="    Marseille, France"/></div>
+					<div id="champmobile"><input type="text" size="22" style="height: 65px" name="ville" value="    Marseille, France"/></div>
+					<div id="bouton"><input type="submit" style="height: 50px" value="Rechercher"/></div>
+					<div id="logoloupe"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  										<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></div>
+				</p>
+			</form>
+		</div>	
+
+	<!- FILTRES -->
+	
+		<div class="Filtres">
+			<ul>
+				<div id="Filtres"><li>Filtres</li></div>
+				<div id="logoéconomique"><i class="fa-solid fa-money-bill-wave fa-sm"></i></div>
+				<div id="logoéconomiqueXL"><i class="fa-solid fa-money-bill-wave fa-lg"></i></div>
+  									<div id="Économique"><li><a href="#">Économique</a></li></div>
+				<div id="logofamilial"><i class="fa-solid fa-child-reaching fa-lg"></i></div>
+				<div id="logofamilialXL"><i class="fa-solid fa-child-reaching fa-xl"></i></div>
+									<div id="Familial"><li><a href="#">Familial</a></li></div>
+				<div id="logoromantique"><i class="fa-solid fa-heart fa-lg"></i></div>
+				<div id="logoromantiqueXL"><i class="fa-solid fa-heart fa-xl"></i></div>
+									<div id="Romantique"><li><a href="#">Romantique</a></li></div>
+				<div id="logoanimauxautorisés"><i class="fa-solid fa-dog fa-lg"></i></div>
+				<div id="logoanimauxautorisésXL"><i class="fa-solid fa-dog fa-xl"></i></div>
+									<div id="Animauxautorisés"><li><a href="#">Animaux autorisés</a></li></div>
+				<div id="logoanimauxautoriséstablette"><i class="fa-solid fa-dog fa-lg"></i></div>
+									<div id="Animauxautoriséstablette"><li><a href="#">Animaux autorisés</a></li></div>
+			</ul>
+		</div>
+
+	<!- PHRASE INFORMATION -->
+
+		<div class="Phraseinformation">
+			<i class="fa-solid fa-info"></i>
+			<p>Plus de 500 logements sont disponibles dans cette ville</p>
+		</div>
+
+
+	<!- ANNONCES HEBERGEMENTS -->
+
+	<section>
+		<div class="Annonceshébergements">
+			<div id="HébergementsàMarseille"><p>Hébergements à Marseille</p></div>
+			<div class="photoshébergements">
+				<a href="#"><figure class="pic1"><img src="hebergements/pic1.jpg" alt="Photo Cannebière" width="230px" height="120px"/>
+					<figcaption><strong>Auberge La Cannebière</strong><br><span class="deuxièmelignephoto">Nuit à partir de <strong>25€</strong></span>
+						<br><div class="étoiles"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><span class="étoilegrise"><i class="fa-solid fa-star fa-xs"></i></span></div></figcaption></figure></a>
+				<a href="#"><figure class="pic2"><img src="hebergements/pic2.jpg" alt="Photo port" width="230px" height="120px"/>
+					<figcaption><strong>Hôtel du port</strong><br><span class="deuxièmelignephoto">Nuit à partir de 52€</span>
+					<br><div class="étoiles"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i></div></figcaption></figure></a>
+				<a href="#"><figure class="pic3"><img src="hebergements/pic3.jpg" alt="Photo Les Mouettes" width="230px" height="120px"/>
+					<figcaption><strong>Hôtel Les Mouettes</strong><br><span class="deuxièmelignephoto">Nuit à partir de 76€</span>
+					<br><div class="étoiles"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><span class="étoilegrise"><i class="fa-solid fa-star fa-xs"></i></span></div></figcaption></figure></a>
+				<a href="#"><figure class="pic4"><img src="hebergements/pic4.jpg" alt="Photo La Mer" width="230px" height="120px"/>
+					<figcaption><strong>Hôtel de la mer</strong><br><span class="deuxièmelignephoto">Nuit à partir de 46€</span>
+						<br><div class="étoiles"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><span class="étoilegrise"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i></span></div></figcaption></figure></a>
+				<a href="#"><figure class="pic5"><img src="hebergements/pic5.jpg" alt="Photo Le Panier" width="230px" height="120px"/>
+					<figcaption><strong>Auberge Le Panier</strong><br><span class="deuxièmelignephoto">Nuit à partir de <strong>23€</strong></span>
+					<br><div class="étoiles"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><span class="étoilegrise"><i class="fa-solid fa-star fa-xs"></i></span></div></figcaption></figure></a>
+				<a href="#"><figure class="pic6"><img src="hebergements/pic6.jpg" alt="Photo Chez Amina" width="230px" height="120px"/>
+					<figcaption><strong>Hôtel chez Amina</strong><br><span class="deuxièmelignephoto">Nuit à partir de 96€</span>
+						<br><div class="étoiles"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i></div></figcaption></figure></a>
+			<div id="Afficherplus"><p>Afficher plus</p></div></div>
+		</div>
+
+		<div class="Populaires">
+			<div id="Lespluspopulaires"><p>Les plus populaires</p></div>
+			<div id="étoilepopulaire"><i class="fa-solid fa-star fa-lg"></i></div>
+		</div>
+
