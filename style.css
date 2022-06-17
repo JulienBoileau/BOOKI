@@ -51,7 +51,7 @@ header
 
 }
 
-.Hébergements, .Activités
+.hébergements, .activités
 {
 	text-decoration: none;
 	box-shadow: none;
@@ -377,7 +377,7 @@ section
 .Annonceshébergements
 {
 	margin-left: 45px;
-	margin-top: 35px;
+	margin-top: 25px;
 	height: 640px;
 	width: 870px;
 	background-color: #F2F2F2;
@@ -391,7 +391,7 @@ section
 	flex-wrap: wrap;
 }
 
-.Photoshébergements a
+.Photoshébergements a, .Photospopulaires a, .Photosactivitesdesktop a, .Photosactivitesmobile a
 {
 	text-decoration: none;
 	color: black;
@@ -400,7 +400,7 @@ section
 .Annonceshébergements p, .Populaires p
 {
 	padding-top: 20px;
-	padding-left: 30px;
+	padding-left: 40px;
 	font-size: 22px;
 	font-weight: 700;
 }
@@ -411,6 +411,7 @@ section
 	padding-left: 6px;
 	line-height: 22px;
 }
+
 
 .Deuxièmelignephoto
 {
@@ -521,26 +522,271 @@ section
 	padding-left: 38px;
 }
 
+
 	/*LES PLUS POPULAIRES*/
 
 .Populaires
 {
 	margin-left: 45px;
-	margin-top: 35px;
+	margin-top: 25px;
 	height: 640px;
-	width: 400px;
+	width: 420px;
 	background-color: #F2F2F2;
 	border-radius: 20px;
 }
 
 #étoilepopulaire
 {
-	margin-left: 340px;
+	margin-left: 350px;
 	margin-top: -35px;
 }
 
 
+.Photospopulaires
+{
+	margin-top: 55px;
+	margin-left: 0px;
+}
 
+.Photospopulaires figcaption
+{
+	padding-left: 30px;
+	padding-top: 15px;
+}
+
+.Photospopulaires span
+{
+	line-height: 35px;
+}
+
+.Photospopulaires i
+{
+	line-height: 50px;
+}
+
+.pic7
+{
+	display: flex;
+	flex-direction: row;
+	width: 330px;
+	height: 140px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 1px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic8
+{
+	display: flex;
+	flex-direction: row;
+	width: 330px;
+	height: 140px;
+	margin-top: 30px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 1px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic9
+{
+	display: flex;
+	flex-direction: row;
+	width: 330px;
+	height: 140px;
+	margin-top: 30px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 1px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic7 img, .pic8 img, .pic9 img
+{
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+
+	/*ANNONCES ACTIVITES*/
+
+.Photosactivitesdesktop
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#Activitesamarseille
+{
+	font-size: 22px;
+	font-weight: 700;
+	margin-left: 45px;
+	margin-top: 60px;
+}
+
+.pic10
+{
+	width: 300px;
+	height: 430px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic11
+{
+	width: 300px;
+	height: 230px;
+	margin-left: 8px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic12
+{
+	width: 300px;
+	height: 152px;
+	margin-top: 295px;
+	margin-left: -342px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic13
+{
+	width: 300px;
+	height: 430px;
+	margin-left: 8px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic14
+{
+	width: 300px;
+	height: 190px;
+	margin-left: 10px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic15
+{
+	width: 300px;
+	height: 195px;
+	margin-top: 250px;
+	margin-left: -340px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0px 0px 8px lightgrey;
+}
+
+.pic10 img, .pic11 img, .pic12 img, .pic13 img, .pic14 img, .pic15 img
+{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.Photosactivitesdesktop figcaption
+{
+	padding-left: 20px;
+	padding-top: 15px;
+}
+
+.Photosactivitesmobile
+{
+	display: none;
+}
+
+
+	/*BODY RESPONSIVE REDUCTION D'ECRAN*/
+
+@media screen and (min-width: 1171px) and (max-width: 1410px)
+{
+	.Annonceshébergements
+	{
+		position: relative;
+		height: 850px;
+	}
+
+	.pic2, .pic3, .pic4, .pic5, .pic6
+	{
+		margin-left: 35px;
+	}
+
+	#Afficherplus 
+	{
+		position: absolute;
+		padding-left: 5px;
+		padding-top: 700px;
+	}
+
+	.Photosactivitesdesktop
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.pic14
+	{
+		margin-left: 40px;
+	}
+
+	.pic15
+	{
+		margin-left: 5px;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1170px)
+{
+	.Annonceshébergements
+	{
+		position: relative;
+		height: 1580px;
+	}
+
+	.pic2, .pic3, .pic4, .pic5, .pic6
+	{
+		margin-left: 35px;
+	}
+
+	#Afficherplus 
+	{
+		position: absolute;
+		padding-left: 5px;
+		padding-top: 1420px;
+	}
+
+	.Photosactivitesdesktop
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.pic14
+	{
+		margin-left: 40px;
+	}
+
+	.pic15
+	{
+		margin-left: 5px;
+		margin-top: 20px;
+	}
+}
 
 
 
@@ -619,6 +865,27 @@ section
 	.Phraseinformation i
 	{
 		margin-left: 50px;
+	}
+
+	.Annonceshébergements
+	{
+		height: 1580px;
+	}
+
+	.pic2, .pic3, .pic4, .pic5, .pic6
+	{
+		margin-left: 35px;
+	}
+
+	.Photosactivitesdesktop
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.pic13
+	{
+		margin-left: 38px;
 	}
 
 
@@ -824,5 +1091,190 @@ section
 		width: 20px;
 	}
 
+	section
+	{
+		display: inline-flex;
+		flex-direction: column;
+	}
+
+	.Populaires p, .Annonceshébergements p
+	{
+		font-size: 30px;
+	}
+
+	#étoilepopulaire
+	{
+		font-size: 24px;
+		margin-left: 460px;
+		margin-top: -47px;
+	}
+
+	.Populaires
+	{
+		order: -1;
+		width: 520px;
+		height: 780px;
+		margin-left: -10px;
+		border-radius: 0px;
+	}
+
+	.Populaires figcaption, .Annonceshébergements figcaption, #Afficherplus p, .Annoncesactivites figcaption
+	{
+		font-size: 22px;
+	}
+
+	.Populaires span, .Annonceshébergements span
+	{
+		font-size: 18px;
+	}
+
+	.pic7, .pic8, .pic9
+	{
+		margin-left: 40px;
+		padding-top: 7px;
+		width:  440px;
+		height: 180px;
+	}
+
+	.pic7 img, .pic8 img, .pic9 img
+	{
+		width: 165px;
+		height: 172px;
+	}
+
+	.Photospopulaires i
+	{
+		line-height: 70px;
+	}
+
+	.Annonceshébergements
+	{
+		background-color: #FFFFFF;
+	}
+
+	.Annonceshébergements p
+	{
+		margin-left: -50px;
+	}
+
+	.Photoshébergements
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.pic1, .pic2, .pic3, .pic4, .pic5, .pic6
+	{
+		margin-left: -17px;
+		width: 440px;
+		height: 265px;
+	}
+
+	.pic1 img, .pic2 img, .pic3 img, .pic4 img, .pic5 img, .pic6 img
+	{
+		width: 430px;
+		height: 150px;
+		padding-left: 3px;
+		padding-top: 3px;
+	}
+
+	.Annonceshébergements figcaption, .Annonceshébergements span
+	{
+		line-height: 32px;
+	}
+
+	.Annonceshébergements i
+	{
+		line-height: 16px;
+	}
+
+	#Activitesamarseille
+	{
+		position: absolute;
+		margin-top: -100px;
+		margin-left: 30px;
+		font-size: 30px;
+	}
+
+	.Photosactivitesdesktop
+	{
+		display: none ;
+	}
+
+	.Photosactivitesmobile
+	{
+		display: flex;
+		flex-direction: column;
+		margin-top: 1500px;
+		position: relative;
+	}
+
+	.picmobile1, .picmobile2, .picmobile3, .picmobile4, .picmobile5, .picmobile6
+	{
+		margin-left: 25px;
+		width: 440px;
+		height: 265px;
+		background-color: #FFFFFF;
+		border-radius: 15px;
+		box-shadow: 0px 0px 8px lightgrey;
+	}
+
+	.picmobile1 img, .picmobile2 img, .picmobile3 img, .picmobile4 img, .picmobile5 img, .picmobile6 img
+	{
+		width: 440px;
+		height: 190px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+
+	.Photosactivitesmobile figcaption
+	{
+		padding-top: 22px;
+		padding-left: 20px;
+	}
+
 }
+
+
+	
+	/********** FOOTER **********/
+
+	footer
+	{
+		display: flex;
+		flex-direction: row;
+		margin-top: 40px;
+		background-color: #F2F2F2;
+		width: 1430px;
+		height: 220px;
+	}
+
+	footer p
+	{
+		margin-top: -40px;
+	}
+
+
+	.Apropos
+	{
+		margin-top: 30px;
+		margin-left: 50px;
+	}
+
+	.Noshebergements
+	{
+		margin-top: 30px;
+		margin-left: 200px;
+	}
+
+	.Assistance
+	{
+		margin-top: 30px;
+		margin-left: 300px;
+	}
+
+	.Apropos, .Noshebergements, .Assistance
+	{
+		line-height: 30px;
+	}
 
