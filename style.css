@@ -1235,6 +1235,8 @@ section
 
 }
 
+	/*FIN DU BODY*/
+
 
 	
 	/********** FOOTER **********/
@@ -1278,3 +1280,67 @@ section
 		line-height: 30px;
 	}
 
+
+
+	/*FOOTER RESPONSIVE REDUCTION D'ECRAN*/
+
+
+@media screen and (min-width: 992px) and (max-width: 1108px)
+{
+	.Noshebergements
+	{
+		margin-top: 30px;
+		margin-left: 120px;
+	}
+
+	.Assistance
+	{
+		margin-top: 30px;
+		margin-left: 220px;
+	}
+}
+
+
+	/*FOOTER RESPONSIVE TABLETTE*/
+
+
+@media screen and (min-width: 769px) and (max-width: 992px)
+{
+	.Noshebergements
+	{
+		margin-top: 30px;
+		margin-left: 50px;
+	}
+
+	.Assistance
+	{
+		margin-top: 30px;
+		margin-left: 110px;
+	}
+}
+
+
+	/*FOOTER RESPONSIVE MOBILE*/
+
+@media screen and (max-width: 768px)
+{
+	footer
+	{
+		display: flex;
+		flex-direction: column;
+		font-size: 22px;
+		width: 500px;
+		height: 700px;
+	}
+
+	footer p
+	{
+		line-height: 38px;
+	}
+
+	.Apropos, .Noshebergements, .Assistance
+	{
+		margin-left: 20px;
+	}
+
+}
