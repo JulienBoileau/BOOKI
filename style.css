@@ -1,5 +1,10 @@
 /* POLICE */
 
+	html
+	{
+		overflow-x: hidden;
+	}
+
 	header, body
 	{
 		font-family: 'Raleway', sans-serif;
@@ -37,13 +42,13 @@ header
 	margin-left: 60px;
 }
 
-.Menu ul
+.menu ul
 {
 	display: flex;
 	flex-direction: row;
 }
 
-.Menu li 
+.menu li 
 {
 	margin-top: 25px;
 	padding-left:  70px;
@@ -51,7 +56,7 @@ header
 
 }
 
-.hébergements, .activités
+.hebergements, .activites
 {
 	text-decoration: none;
 	box-shadow: none;
@@ -59,7 +64,7 @@ header
 }
 
 
-.Menu a:hover
+.menu a:hover
 {
 	color: #0065FC;
 	border-top: 2px #0065FC solid;
@@ -83,12 +88,12 @@ header
 		font-size: 22px;
 	}
 
-	.Menu
+	.menu
 	{
 		margin-right: 10%;
 	}
 
-	.Menu a:hover
+	.menu a:hover
 	{
 		padding-top: 53px;
 	}
@@ -120,13 +125,13 @@ header
 		margin-top: 12px;
 	}
 
-	.Menu
+	.menu
 	{
 		margin-top: 80px;
 		font-size: 22px;
 	}
 
-	.Menu li
+	.menu li
 	{
 		margin-left: -60px;
 		padding-right: 100px;
@@ -134,7 +139,7 @@ header
 		padding-bottom: 12px;
 	}
 
-	.Menu a:hover
+	.menu a:hover
 	{
 		border-top: 0;
 		border-bottom: 4px #0065FC solid;
@@ -148,11 +153,10 @@ header
 
 	
 	
-	/********* BODY **********/
 
 	/*PRESENTATION*/
 
-.Présentation
+.presentation
 {
 	margin-left: 45px;
 	margin-top: 50px;
@@ -161,18 +165,18 @@ header
 
 	/*BARRE DE RECHERCHE*/
 
-#logoposition
+#logo_position
 {
 	position: absolute;
 	margin-left: 48px;
-	background-color: F2F2F2;
+	background-color: #F2F2F2;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 	height: 50px;
 	width:  50px;
 }
 
-.Recherche svg
+.recherche svg
 {
 	margin-left: 15px;
 	margin-top: 15px;
@@ -186,7 +190,7 @@ form
 	margin-top: 25px;
 }
 
-#champmobile
+#champ_mobile
 {
 	display: none;
 }
@@ -211,141 +215,85 @@ form
 	font-weight: bold;
 }
 
-#logoloupe
+#logo_loupe
 {
 	display: none;
 }
 
 	/*FILTRES*/
 
-.Filtres a
+
+.filtres h3
+{
+	margin-left: 50px;
+	margin-top: 42px;
+}
+
+.filtres
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.barres_filtres
+{
+	display: flex;
+	flex-direction: row;
+	margin-top: 25px;
+}
+
+.filtres figure
+{
+	display: flex;
+	flex-direction: row;
+	font-weight: bold;
+	font-size: 18px;
+	border: 2px #F2F2F2 solid;
+	border-radius: 30px;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-right: -15px;
+	height: 46px;
+}
+
+.filtres figcaption
+{
+	padding-right: 15px;
+	padding-top: 13px;
+	padding-bottom: 8px;
+}
+
+
+.filtres i
+{
+	margin-left: -2px;
+	margin-right: 15px;
+	margin-top: -1px;
+	padding-top: 25px;
+	padding-left: 16px;
+	height: 23px;
+	width: 36px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	background-position: center;
+	border-radius: 30px;
+}
+
+.filtres a
 {
 	text-decoration: none;
 	color: black;
 }
 
-.Filtres a:hover
+.filtres a:hover
 {
 	color: #0065FC;
-	font-size: 21px;
-}
-
-.Filtres ul
-{
-	display: flex;
-	font-weight: 700;
-	font-size: 19px;
-	margin-top: 35px;
-	margin-left: 10px;
-	width: 950px;
-	flex-direction: row;
-	justify-content: space-between;
-	list-style: none;
-}
-
-#Filtres
-{
-	padding-top: 15px;
-	padding-right: 20px;
-}
-
-#Économique, #Familial, #Romantique, #Animauxautorisés
-{
-	border: 3px #F2F2F2 solid;
-	border-radius: 50px;
-	text-align: right;
-	height: 35px;
-	padding-top: 15px;
-	padding-left: 15px;
-	padding-right: 22px;
-}
-
-#Économique
-{
-	width:  160px;
-}
-
-#logoéconomiqueXL, #logofamilialXL, #logoromantiqueXL, #logoanimauxautorisésXL
-{
-	display: none;
-}
-
-#logoéconomique
-{
-	position: absolute;
-	margin-left: 83px;
-	padding-top: 25px;
-	text-align: center;
-	color: #0065FC;
-	background-color: #DEEBFF;
-	border-radius: 50px;
-	height: 30px;
-	width: 55px;
-}
-
-#Familial
-{
-	width:  120px;
-}
-
-#logofamilial
-{
-	position: absolute;
-	margin-left: 295px;
-	padding-top: 25px;
-	text-align: center;
-	color: #0065FC;
-	background-color: #DEEBFF;
-	border-radius: 50px;
-	height: 30px;
-	width: 55px;
-}
-
-#Romantique
-{
-	width:  160px;
-}
-
-#logoromantique
-{
-	position: absolute;
-	margin-left: 465px;
-	padding-top: 25px;
-	text-align: center;
-	color: #0065FC;
-	background-color: #DEEBFF;
-	border-radius: 50px;
-	height: 30px;
-	width: 55px;
-}
-
-#Animauxautorisés
-{
-	width: 230px;
-}
-
-#logoanimauxautorisés
-{
-	position: absolute;
-	margin-left: 678px;
-	padding-top: 25px;
-	text-align: center;
-	color: #0065FC;
-	background-color: #DEEBFF;
-	border-radius: 50px;
-	height: 30px;
-	width: 55px;
-}
-
-#logoanimauxautoriséstablette, #Animauxautoriséstablette
-{
-	display: none;
 }
 
 
 	/*PHRASE INFORMATION*/
 
-.Phraseinformation i
+.phrase_information i
 {
 	position: absolute;
 	margin-left: 60px;
@@ -358,6 +306,12 @@ form
 	width: 13px;
 }
 
+.phrase_information p
+{
+	margin-top: 30px;
+	margin-left: 92px;
+}
+
 	/***SECTION***/
 
 section
@@ -368,13 +322,9 @@ section
 
 	/*ANNONCES HEBERGEMENTS*/
 
-.Phraseinformation p
-{
-	margin-top: 30px;
-	margin-left: 92px;
-}
 
-.Annonceshébergements
+
+.annonces_hebergements
 {
 	margin-left: 45px;
 	margin-top: 25px;
@@ -384,20 +334,20 @@ section
 	border-radius: 20px;
 }
 
-.Photoshébergements
+.photos_hebergements
 {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.Photoshébergements a, .Photospopulaires a, .Photosactivitesdesktop a, .Photosactivitesmobile a
+.photos_hebergements a, .photos_populaires a, .photos_activites_ordi a, .photos_activites_mobile a
 {
 	text-decoration: none;
 	color: black;
 }
 
-.Annonceshébergements p, .Populaires p
+.annonces_hebergements p, .populaires p
 {
 	padding-top: 20px;
 	padding-left: 40px;
@@ -405,7 +355,7 @@ section
 	font-weight: 700;
 }
 
-.Annonceshébergements figcaption
+.annonces_hebergements figcaption
 {
 	padding-top: 6px;
 	padding-left: 6px;
@@ -413,7 +363,7 @@ section
 }
 
 
-.Deuxièmelignephoto
+.deuxieme_ligne_photo
 {
 	font-size: 14px;
 }
@@ -503,19 +453,25 @@ section
 	border-top-right-radius: 15px;
 }
 
-.étoilegrise
+.etoile_grise
 {
 	color: #F2F2F2;
 }
 
 
-.étoiles
+.photos_hebergements .etoiles
+{
+	padding-top: 0px;
+	color: #0065FC;
+}
+
+.photos_populaires .etoiles
 {
 	padding-top: 10px;
 	color: #0065FC;
 }
 
-#Afficherplus p
+#afficher_plus p
 {
 	font-size: 18px;
 	padding-top: 2px;
@@ -525,7 +481,7 @@ section
 
 	/*LES PLUS POPULAIRES*/
 
-.Populaires
+.populaires
 {
 	margin-left: 45px;
 	margin-top: 25px;
@@ -535,31 +491,31 @@ section
 	border-radius: 20px;
 }
 
-#étoilepopulaire
+#etoile_populaire
 {
 	margin-left: 350px;
-	margin-top: -35px;
+	margin-top: -45px;
 }
 
 
-.Photospopulaires
+.photos_populaires
 {
-	margin-top: 55px;
+	margin-top: 45px;
 	margin-left: 0px;
 }
 
-.Photospopulaires figcaption
+.photos_populaires figcaption
 {
 	padding-left: 30px;
 	padding-top: 15px;
 }
 
-.Photospopulaires span
+.photos_populaires span
 {
 	line-height: 35px;
 }
 
-.Photospopulaires i
+.photos_populaires i
 {
 	line-height: 50px;
 }
@@ -617,13 +573,13 @@ section
 
 	/*ANNONCES ACTIVITES*/
 
-.Photosactivitesdesktop
+.photos_activites_ordi
 {
 	display: flex;
 	flex-direction: row;
 }
 
-#Activitesamarseille
+#activites_a_marseille
 {
 	font-size: 22px;
 	font-weight: 700;
@@ -698,23 +654,23 @@ section
 	border-top-right-radius: 15px;
 }
 
-.Photosactivitesdesktop figcaption
+.photos_activites_ordi figcaption
 {
 	padding-left: 20px;
 	padding-top: 15px;
 }
 
-.Photosactivitesmobile
+.photos_activites_mobile
 {
 	display: none;
 }
 
 
-	/*BODY RESPONSIVE REDUCTION D'ECRAN*/
+	/*MAIN RESPONSIVE REDUCTION D'ECRAN*/
 
 @media screen and (min-width: 1171px) and (max-width: 1410px)
 {
-	.Annonceshébergements
+	.annonces_hebergements
 	{
 		position: relative;
 		height: 850px;
@@ -725,14 +681,14 @@ section
 		margin-left: 35px;
 	}
 
-	#Afficherplus 
+	#afficher_plus 
 	{
 		position: absolute;
 		padding-left: 5px;
 		padding-top: 700px;
 	}
 
-	.Photosactivitesdesktop
+	.photos_activites_ordi
 	{
 		display: flex;
 		flex-wrap: wrap;
@@ -752,7 +708,7 @@ section
 
 @media screen and (min-width: 992px) and (max-width: 1170px)
 {
-	.Annonceshébergements
+	.annonces_hebergements
 	{
 		position: relative;
 		height: 1580px;
@@ -763,17 +719,22 @@ section
 		margin-left: 35px;
 	}
 
-	#Afficherplus 
+	#afficher_plus 
 	{
 		position: absolute;
 		padding-left: 5px;
 		padding-top: 1420px;
 	}
 
-	.Photosactivitesdesktop
+	.photos_activites_ordi
 	{
 		display: flex;
 		flex-wrap: wrap;
+	}
+
+	.pic13
+	{
+		margin-left: 40px;
 	}
 
 	.pic14
@@ -783,91 +744,44 @@ section
 
 	.pic15
 	{
-		margin-left: 5px;
-		margin-top: 20px;
+		margin-left: -340px;
+		margin-top: 240px;
 	}
 }
 
 
 
-	/*BODY RESPONSIVE TABLETTE*/
+	/*MAIN RESPONSIVE TABLETTE*/
 
 @media screen and (min-width: 769px) and (max-width: 992px)
 {
-	.Présentation h2
+	.presentation h2
 	{
 		font-size: 26px;
 	}
 
-	.Présentation p
+	.presentation p
 	{
 		font-size: 20px;
 	}
 
-	#Économique
-	{
-		position: absolute;
-		margin-left: 83px;
-	}
-
-	#Familial
-	{
-		position: absolute;
-		margin-left: 295px;
-	}
-
-	#Romantique
-	{
-		position: absolute;
-		margin-left: 465;
-	}
-
-	#logoanimauxautorisés, #Animauxautorisés
-	{
-		display: none;
-	}
-
-	#logoanimauxautoriséstablette
+	.barres_filtres
 	{
 		display: flex;
-		position: absolute;
-		margin-top: 80px;
-		margin-left: 85px;
-		padding-left: 14px;
-		padding-top: 25px;
-		color: #0065FC;
-		background-color: #DEEBFF;
-		border-radius: 50px;
-		height: 29px;
-		width: 42px;
+		flex-wrap: wrap;
 	}
 
-	#Animauxautoriséstablette
+	.phrase_information p
 	{
-		display: flex;
-		position: absolute;
-		margin-top: 78px;
-		margin-left: 83px;
-		border: 3px #F2F2F2 solid;
-		border-radius: 50px;
-		text-align: right;
-		height: 35px;
-		width: 190px;
-		padding-top: 18px;
-		padding-left: 65px;
+		margin-top: 30px;
 	}
 
-	.Phraseinformation p
-	{
-		margin-top: 130px;
-	}
-
-	.Phraseinformation i
+	.phrase_information i
 	{
 		margin-left: 50px;
 	}
 
-	.Annonceshébergements
+	.annonces_hebergements
 	{
 		height: 1580px;
 	}
@@ -877,7 +791,35 @@ section
 		margin-left: 35px;
 	}
 
-	.Photosactivitesdesktop
+	.populaires
+	{
+		width: 320px;
+		height: 660px;
+	}
+
+	.populaires figcaption
+	{
+		padding-left: 15px;
+	}
+
+	#etoile_populaire
+	{
+		margin-left: 280px;
+	}
+
+	.pic7, .pic8, .pic9
+	{
+		width: 290px;
+		height: 150px;
+		margin-left: 15px;
+	}
+
+	.pic7 img, .pic8 img, .pic9 img
+	{
+		height: 145px;
+	}
+
+	.photos_activites_ordi
 	{
 		display: flex;
 		flex-wrap: wrap;
@@ -893,7 +835,7 @@ section
 
 
 
-	/* BODY RESPONSIVE MOBILE*/
+	/* MAIN RESPONSIVE MOBILE*/
 
 @media screen and (max-width: 768px)
 {
@@ -903,7 +845,7 @@ section
 		line-height: 35px;
 	}
 
-	.Présentation p
+	.presentation p
 	{
 		font-size: 20px;
 		line-height: 20px;
@@ -914,7 +856,7 @@ section
 		display: none;
 	}
 
-	#champmobile
+	#champ_mobile
 	{
 		display: flex;
 		margin-top: 20px;
@@ -922,10 +864,10 @@ section
 		width: 350px;
 	}
 
-	#champmobile input
+	#champ_mobile input
 	{
 		font-size: 24px;
-		border-color: F2F2F2;
+		border-color: #F2F2F2;
 		border-width: 1px;
 	}
 
@@ -934,21 +876,21 @@ section
 		display: none;
 	}
 
-	#logoposition
+	#logo_position
 	{
 		margin-top: 20px;
 		margin-left: 32px;
-		height: 65px;
-		width: 65px;
+		height: 70px;
+		width: 70px;
 	}
 
-	#logoposition svg
+	#logo_position svg
 	{
 		margin-top: 22px;
-		margin-left: 20px;
+		margin-left: 25px;
 	}
 
-	#logoloupe
+	#logo_loupe
 	{
 		display: flex;
 		position: absolute;
@@ -957,131 +899,58 @@ section
 		color: #FFFFFF;
 		background-color: #0065FC;
 		border-radius: 20px;
-		width: 65px;
-		height: 65px;
+		width: 70px;
+		height: 70px;
 	}
 
-	#logoloupe svg
+	#logo_loupe svg
 	{
 		position: relative;
-		margin-left: 20px;
-		margin-top: 17px;
+		margin-left: 22px;
+		margin-top: 20px;
 	}
 
-	#Filtres
-	{
-		font-size: 25px;
-		margin-bottom: 15px;
-		margin-left: -10px;
-	}
-
-	#Économique, #Romantique
-	{
-		margin-bottom: 15px;
-		margin-left: -10px;
-		height: 45px;
-		width: 200px;
-	}
-
-	#Familial
-	{
-		position: absolute;
-		margin-top: 60px;
-		margin-left: 240px;
-		height: 45px;
-		width: 140px;
-	}
-
-	#Animauxautorisés
-	{
-		margin-bottom: 15px;
-		margin-left: -10px;
-		height: 45px;
-		width: 260px;
-	}
-
-	.Filtres ul
+	.filtres
 	{
 		display: flex;
 		flex-direction: column;
-		margin-left: 5px;
+		font-size: 22px;
+	}
+
+	.barres_filtres
+	{
+		display: flex;
+		flex-wrap: wrap ;
+	}
+
+	.filtres figure
+	{
+		height: 62px;
+	}
+
+	.filtres figcaption
+	{
 		font-size: 23px;
+		padding-top: 15px;
 	}
 
-	#logoéconomique, #logofamilial, #logoromantique, #logoanimauxautorisés
+	.filtres i
 	{
-		display: none;
+		font-size: 26px;
+		height: 35px;
+		width: 45px;
+		padding-left: 22px;
+		padding-top: 30px;
 	}
 
-
-	#logoéconomiqueXL
-	{
-		display: flex;
-		position: absolute;
-		margin-top: 60px;
-		margin-left: -10px;
-		padding-left: 15px;
-		padding-top: 32px;
-		color: #0065FC;
-		background-color: #DEEBFF;
-		border-radius: 50px;
-		height: 32px;
-		width: 48px;
-	}
-
-	#logofamilialXL
-		{
-		display: flex;
-		position: absolute;
-		margin-top: 60px;
-		margin-left: 240px;
-		padding-left: 18px;
-		padding-top: 32px;
-		color: #0065FC;
-		background-color: #DEEBFF;
-		border-radius: 50px;
-		height: 32px;
-		width: 46px;
-	}
-
-	#logoromantiqueXL
-	{
-		display: flex;
-		position: absolute;
-		margin-top: 142px;
-		margin-left: -10px;
-		padding-left: 14px;
-		padding-top: 32px;
-		color: #0065FC;
-		background-color: #DEEBFF;
-		border-radius: 50px;
-		height: 32px;
-		width: 49px;
-	}
-
-	#logoanimauxautorisésXL
-	{
-		display: flex;
-		position: absolute;
-		margin-top: 224px;
-		margin-left: -10px;
-		padding-left: 14px;
-		padding-top: 32px;
-		color: #0065FC;
-		background-color: #DEEBFF;
-		border-radius: 50px;
-		height: 32px;
-		width: 49px;
-	}
-
-	.Phraseinformation p
+	.phrase_information p
 	{
 		margin-top: 40px;
 		margin-left: 72px;
 		font-size: 22px;
 	}
 
-	.Phraseinformation i
+	.phrase_information i
 	{
 		margin-left: 25px;
 		font-size: 22px;
@@ -1097,19 +966,19 @@ section
 		flex-direction: column;
 	}
 
-	.Populaires p, .Annonceshébergements p
+	.populaires p, .annonces_hebergements p
 	{
 		font-size: 30px;
 	}
 
-	#étoilepopulaire
+	#etoile_populaire
 	{
 		font-size: 24px;
 		margin-left: 460px;
-		margin-top: -47px;
+		margin-top: -60px;
 	}
 
-	.Populaires
+	.populaires
 	{
 		order: -1;
 		width: 520px;
@@ -1118,12 +987,12 @@ section
 		border-radius: 0px;
 	}
 
-	.Populaires figcaption, .Annonceshébergements figcaption, #Afficherplus p, .Annoncesactivites figcaption
+	.populaires figcaption, .annonces_hebergements figcaption, #afficher_plus p, .annonces_activites figcaption
 	{
 		font-size: 22px;
 	}
 
-	.Populaires span, .Annonceshébergements span
+	.populaires span, .annonces_hebergements span
 	{
 		font-size: 18px;
 	}
@@ -1142,22 +1011,22 @@ section
 		height: 172px;
 	}
 
-	.Photospopulaires i
+	.photos_populaires i
 	{
 		line-height: 70px;
 	}
 
-	.Annonceshébergements
+	.annonces_hebergements
 	{
 		background-color: #FFFFFF;
 	}
 
-	.Annonceshébergements p
+	.annonces_hebergements p
 	{
 		margin-left: -50px;
 	}
 
-	.Photoshébergements
+	.photos_hebergements
 	{
 		display: flex;
 		flex-direction: column;
@@ -1178,17 +1047,17 @@ section
 		padding-top: 3px;
 	}
 
-	.Annonceshébergements figcaption, .Annonceshébergements span
+	.annonces_hebergements figcaption, .annonces_hebergements span
 	{
 		line-height: 32px;
 	}
 
-	.Annonceshébergements i
+	.annonces_hebergements i
 	{
 		line-height: 16px;
 	}
 
-	#Activitesamarseille
+	#activites_a_marseille
 	{
 		position: absolute;
 		margin-top: -100px;
@@ -1196,12 +1065,12 @@ section
 		font-size: 30px;
 	}
 
-	.Photosactivitesdesktop
+	.photos_activites_ordi
 	{
 		display: none ;
 	}
 
-	.Photosactivitesmobile
+	.photos_activites_mobile
 	{
 		display: flex;
 		flex-direction: column;
@@ -1209,7 +1078,7 @@ section
 		position: relative;
 	}
 
-	.picmobile1, .picmobile2, .picmobile3, .picmobile4, .picmobile5, .picmobile6
+	.pic_mobile1, .pic_mobile2, .pic_mobile3, .pic_mobile4, .pic_mobile5, .pic_mobile6
 	{
 		margin-left: 25px;
 		width: 440px;
@@ -1219,7 +1088,7 @@ section
 		box-shadow: 0px 0px 8px lightgrey;
 	}
 
-	.picmobile1 img, .picmobile2 img, .picmobile3 img, .picmobile4 img, .picmobile5 img, .picmobile6 img
+	.pic_mobile1 img, .pic_mobile2 img, .pic_mobile3 img, .pic_mobile4 img, .pic_mobile5 img, .pic_mobile6 img
 	{
 		width: 440px;
 		height: 190px;
@@ -1227,7 +1096,7 @@ section
 		border-top-right-radius: 15px;
 	}
 
-	.Photosactivitesmobile figcaption
+	.photos_activites_mobile figcaption
 	{
 		padding-top: 22px;
 		padding-left: 20px;
@@ -1235,7 +1104,7 @@ section
 
 }
 
-	/*FIN DU BODY*/
+	/*FIN DU MAIN*/
 
 
 	
@@ -1257,25 +1126,25 @@ section
 	}
 
 
-	.Apropos
+	.a_propos
 	{
 		margin-top: 30px;
 		margin-left: 50px;
 	}
 
-	.Noshebergements
+	.nos_hebergements
 	{
 		margin-top: 30px;
 		margin-left: 200px;
 	}
 
-	.Assistance
+	.assistance
 	{
 		margin-top: 30px;
 		margin-left: 300px;
 	}
 
-	.Apropos, .Noshebergements, .Assistance
+	.a_propos, .nos_hebergements, .assistance
 	{
 		line-height: 30px;
 	}
@@ -1287,13 +1156,13 @@ section
 
 @media screen and (min-width: 992px) and (max-width: 1108px)
 {
-	.Noshebergements
+	.nos_hebergements
 	{
 		margin-top: 30px;
 		margin-left: 120px;
 	}
 
-	.Assistance
+	.assistance
 	{
 		margin-top: 30px;
 		margin-left: 220px;
@@ -1306,13 +1175,13 @@ section
 
 @media screen and (min-width: 769px) and (max-width: 992px)
 {
-	.Noshebergements
+	.nos_hebergements
 	{
 		margin-top: 30px;
 		margin-left: 50px;
 	}
 
-	.Assistance
+	.assistance
 	{
 		margin-top: 30px;
 		margin-left: 110px;
@@ -1338,9 +1207,11 @@ section
 		line-height: 38px;
 	}
 
-	.Apropos, .Noshebergements, .Assistance
+	.a_propos, .nos_hebergements, .assistance
 	{
 		margin-left: 20px;
 	}
 
 }
+
+	/*FIN DU FOOTER*/
