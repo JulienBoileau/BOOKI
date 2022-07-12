@@ -26,7 +26,7 @@
 
 header
 {
-	width: 72%;
+	width: 73%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -51,7 +51,7 @@ header
 .menu li 
 {
 	margin-top: 25px;
-	padding-left:  70px;
+	padding-left: 10px;
 	list-style: none;
 
 }
@@ -61,6 +61,7 @@ header
 	text-decoration: none;
 	box-shadow: none;
 	color: black;
+	padding: 30px;
 }
 
 
@@ -104,50 +105,72 @@ header
 
 @media screen and (max-width: 768px)
 {
+	body
+	{
+		margin: 0;
+	}
 
 	header
 	{
 		display: flex;
 		flex-wrap: wrap;
-		width: 80%;
+		width: 100%;
+		text-align: center;
 	}
 
 	.logo
 	{
-		margin-left: 35%;
-		
+		margin-left: 0;
+		width: 100%;
 	}
 
 	.logo img
 	{
-		width: 127px;
-		height: 60px;
+		position: relative;
+		width: 150px;
+		height: 80px;
 		margin-top: 12px;
+		margin-left: 15%;
 	}
 
 	.menu
 	{
-		margin-top: 80px;
-		font-size: 22px;
+		margin-left: 0;
+		margin-top: 0;
+		font-size: 20px;
+		width: 100%;
 	}
 
 	.menu li
 	{
-		margin-left: -60px;
-		padding-right: 100px;
-		border-bottom: 4px #F2F2F2 solid;
-		padding-bottom: 12px;
+		margin: 0;
+		border-bottom: 6px #F2F2F2 solid;
+		padding-bottom: 22px;
+		padding-left: 0;
+		width: 50%;
+		text-align: center;
+	}
+
+	.menu ul 
+	{
+		padding-left: 0;
+	}
+
+	.hebergements, .activites
+	{
+		padding: 0;
 	}
 
 	.menu a:hover
 	{
 		border-top: 0;
-		border-bottom: 4px #0065FC solid;
-		padding-bottom: 12px;
+		border-bottom: 6px #0065FC solid;
+		padding-bottom: 22px;
 	}
 
 }
 
+	/*FIN DU RESPONSIVE HEADER*/
 
 	/*FIN DU HEADER*/
 
@@ -156,14 +179,18 @@ header
 
 	/*PRESENTATION*/
 
-.presentation
-{
-	margin-left: 45px;
-	margin-top: 50px;
-	line-height: 12px;
-}
+	.presentation {
+		margin-left: 20px;
+		margin-top: 50px;
+		line-height: 12px;
+	}
 
 	/*BARRE DE RECHERCHE*/
+
+#logo_loupe_mobile, #logo_position_mobile
+{
+	display: none;
+}
 
 #logo_position
 {
@@ -197,6 +224,9 @@ form
 
 #champ input
 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
 	border-width: 1px;
 	border-color: #F2F2F2;
 	box-shadow: none;
@@ -212,7 +242,8 @@ form
 	border-bottom-right-radius: 15px;
 	border-style: none;
 	color: white;
-	font-weight: bold;
+	font-weight: 600;
+	font-size: 18px;
 }
 
 #logo_loupe
@@ -312,16 +343,14 @@ form
 	margin-left: 92px;
 }
 
-	/***SECTION***/
 
-section
+	/*BLOC HEBERGEMENTS ET POPULAIRES*/
+
+.bloc_hebergements_et_populaires
 {
 	display: flex;
 	flex-direction: row;
 }
-
-	/*ANNONCES HEBERGEMENTS*/
-
 
 
 .annonces_hebergements
@@ -329,7 +358,7 @@ section
 	margin-left: 45px;
 	margin-top: 25px;
 	height: 640px;
-	width: 870px;
+	width: 100%;
 	background-color: #F2F2F2;
 	border-radius: 20px;
 }
@@ -486,7 +515,7 @@ section
 	margin-left: 45px;
 	margin-top: 25px;
 	height: 640px;
-	width: 420px;
+	width: 50%;
 	background-color: #F2F2F2;
 	border-radius: 20px;
 }
@@ -668,6 +697,35 @@ section
 
 	/*MAIN RESPONSIVE REDUCTION D'ECRAN*/
 
+@media screen and (min-width: 1410px) and (max-width: 1424px)
+{
+	.annonces_activites
+	{
+		margin-top: 250px;
+	}
+
+	.annonces_hebergements
+	{
+		height: 900px;
+	}
+
+	.pic3, .pic5
+	{
+		margin-left: 35px;
+	}
+
+	.pic2, .pic4, .pic6
+	{
+		margin-left: 0px;
+	}
+
+	#afficher_plus
+	{
+		margin-top: 250px;
+		margin-left: -600px;
+	}
+}
+
 @media screen and (min-width: 1171px) and (max-width: 1410px)
 {
 	.annonces_hebergements
@@ -841,14 +899,21 @@ section
 {
 	h2
 	{
-		font-size: 30px;
-		line-height: 35px;
+		width: 100%;
+		font-size: 25px;
+		line-height: 30px;
 	}
 
 	.presentation p
 	{
-		font-size: 20px;
+		width: 100%;
+		font-size: 18px;
 		line-height: 20px;
+	}
+
+	form
+	{
+		margin-left: 70px;
 	}
 
 	#champ
@@ -859,16 +924,18 @@ section
 	#champ_mobile
 	{
 		display: flex;
-		margin-top: 20px;
-		height: 65px;
-		width: 350px;
+		height: 60px;
+		margin-top: 30px;
 	}
 
 	#champ_mobile input
 	{
-		font-size: 24px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		font-size: 20px;
 		border-color: #F2F2F2;
 		border-width: 1px;
+		padding-left: 25px;
 	}
 
 	#bouton
@@ -876,154 +943,204 @@ section
 		display: none;
 	}
 
-	#logo_position
+	#logo_position, #logo_loupe
 	{
-		margin-top: 20px;
-		margin-left: 32px;
-		height: 70px;
-		width: 70px;
+		display: none;
 	}
 
-	#logo_position svg
-	{
-		margin-top: 22px;
-		margin-left: 25px;
-	}
-
-	#logo_loupe
+	#logo_position_mobile
 	{
 		display: flex;
 		position: absolute;
-		margin-top: 20px;
-		margin-left: 300px;
+		background-color: #F2F2F2;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+		margin-top: 30px;
+		margin-left: 15px;
+		height: 60px;
+		width: 60px;
+	}
+
+	#logo_position_mobile svg
+	{
+		width: 25px;
+		height: 40px;
+		margin-top: 10px;
+		margin-left: 18px;
+	}
+
+	#logo_loupe_mobile
+	{
+		display: flex;
+		position: absolute;
+		margin-top: 30px;
+		margin-left: 230px;
 		color: #FFFFFF;
 		background-color: #0065FC;
 		border-radius: 20px;
-		width: 70px;
-		height: 70px;
+		width: 60px;
+		height: 60px;
 	}
 
-	#logo_loupe svg
+	#logo_loupe_mobile svg
 	{
+		height: 40px;
+		width: 25px;
 		position: relative;
-		margin-left: 22px;
-		margin-top: 20px;
+		margin-left: 18px;
+		margin-top: 10px;
 	}
 
 	.filtres
 	{
+		width: 100%;
 		display: flex;
-		flex-direction: column;
-		font-size: 22px;
+		flex-wrap: wrap;
 	}
 
 	.barres_filtres
 	{
 		display: flex;
-		flex-wrap: wrap ;
+		flex-wrap: wrap;
+		margin-top: 0px;
+	}
+
+	.filtres h3
+	{
+		font-size: 20px;
+		margin-left: 20px;
 	}
 
 	.filtres figure
 	{
-		height: 62px;
+		height: 50px;
+		margin-left: 20px;
+		border-width: 3px;
+		border-radius: 55px;
 	}
 
 	.filtres figcaption
 	{
-		font-size: 23px;
+		font-size: 17px;
 		padding-top: 15px;
+		padding-left: 0px;
+		padding-right: 15px;
 	}
 
 	.filtres i
 	{
-		font-size: 26px;
-		height: 35px;
-		width: 45px;
-		padding-left: 22px;
-		padding-top: 30px;
+		font-size: 25px;
+		height: 28px;
+		width: 40px;
+		margin-left: -5px;
+		border-radius: 60px;
+		padding-left: 15px;
+		padding-top: 25px;
+	}
+
+	#logo_animaux_autorises
+	{
+		height: 30px;
+		width:  42px;
 	}
 
 	.phrase_information p
 	{
-		margin-top: 40px;
-		margin-left: 72px;
-		font-size: 22px;
+		margin-top: 20px;
+		margin-left: 50px;
+		font-size: 17px;
 	}
 
 	.phrase_information i
 	{
-		margin-left: 25px;
-		font-size: 22px;
-		padding-left: 14px;
-		padding-top: 5px;
-		height: 30px;
-		width: 20px;
+		margin-left: 15px;
+		font-size: 18px;
+		padding-left: 10px;
+		padding-top: 2px;
+		height: 22px;
+		width: 15px;
 	}
 
-	section
+	.bloc_hebergements_et_populaires
 	{
 		display: inline-flex;
 		flex-direction: column;
+		height: 2400px;
+		width: 100%;
 	}
 
 	.populaires p, .annonces_hebergements p
 	{
-		font-size: 30px;
+		font-size: 22px;
+		padding-left: 20px;
 	}
 
 	#etoile_populaire
 	{
-		font-size: 24px;
-		margin-left: 460px;
-		margin-top: -60px;
+		font-size: 18px;
+		margin-left: 86%;
+		margin-top: -45px;
 	}
 
 	.populaires
 	{
 		order: -1;
-		width: 520px;
-		height: 780px;
-		margin-left: -10px;
+		margin-left: 0px;
+		width: 100%;
+		height: 650px;
 		border-radius: 0px;
+	}
+
+	.populaires figcaption
+	{
+		padding-top: 15px;
+		padding-left: 15px;
 	}
 
 	.populaires figcaption, .annonces_hebergements figcaption, #afficher_plus p, .annonces_activites figcaption
 	{
-		font-size: 22px;
+		font-size: 17px;
 	}
 
 	.populaires span, .annonces_hebergements span
 	{
-		font-size: 18px;
+		font-size: 14px;
+		line-height: 25px;
 	}
 
 	.pic7, .pic8, .pic9
 	{
-		margin-left: 40px;
-		padding-top: 7px;
-		width:  440px;
-		height: 180px;
+		margin-left: 20px;
+		padding-top: 6px;
+		border-radius: 20px;
+		width:  85%;
+		height: 140px;
 	}
 
 	.pic7 img, .pic8 img, .pic9 img
 	{
-		width: 165px;
-		height: 172px;
+		width: 138px;
+		height: 134px;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+	}
+
+	.photos_populaires
+	{
+		margin-top: 60px;
 	}
 
 	.photos_populaires i
 	{
-		line-height: 70px;
+		line-height: 60px;
 	}
 
 	.annonces_hebergements
 	{
 		background-color: #FFFFFF;
-	}
-
-	.annonces_hebergements p
-	{
-		margin-left: -50px;
+		width: 100%;
+		margin-top: 50px;
+		margin-left: 0px;
 	}
 
 	.photos_hebergements
@@ -1034,22 +1151,30 @@ section
 
 	.pic1, .pic2, .pic3, .pic4, .pic5, .pic6
 	{
-		margin-left: -17px;
-		width: 440px;
-		height: 265px;
+		width: 300px;
+		height: 210px;
+		border-radius: 20px;
+		margin-left: 20px;
 	}
 
 	.pic1 img, .pic2 img, .pic3 img, .pic4 img, .pic5 img, .pic6 img
 	{
-		width: 430px;
-		height: 150px;
-		padding-left: 3px;
-		padding-top: 3px;
+		width: 293px;
+		height: 120px;
+		padding-left: 1px;
+		padding-top: 1px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+
+	.photos_hebergements figcaption
+	{
+		padding-left: 15px;
 	}
 
 	.annonces_hebergements figcaption, .annonces_hebergements span
 	{
-		line-height: 32px;
+		line-height: 25px;
 	}
 
 	.annonces_hebergements i
@@ -1057,12 +1182,17 @@ section
 		line-height: 16px;
 	}
 
+	#afficher_plus p
+	{
+		padding-left: 20px;
+		font-size: 20px;
+	}
+
 	#activites_a_marseille
 	{
-		position: absolute;
-		margin-top: -100px;
-		margin-left: 30px;
-		font-size: 30px;
+		margin-top: 0px;
+		margin-left: 20px;
+		font-size: 22px;
 	}
 
 	.photos_activites_ordi
@@ -1074,32 +1204,30 @@ section
 	{
 		display: flex;
 		flex-direction: column;
-		margin-top: 1500px;
-		position: relative;
 	}
 
 	.pic_mobile1, .pic_mobile2, .pic_mobile3, .pic_mobile4, .pic_mobile5, .pic_mobile6
 	{
 		margin-left: 25px;
-		width: 440px;
-		height: 265px;
+		width: 300px;
+		height: 190px;
 		background-color: #FFFFFF;
-		border-radius: 15px;
+		border-radius: 20px;
 		box-shadow: 0px 0px 8px lightgrey;
 	}
 
 	.pic_mobile1 img, .pic_mobile2 img, .pic_mobile3 img, .pic_mobile4 img, .pic_mobile5 img, .pic_mobile6 img
 	{
-		width: 440px;
-		height: 190px;
-		border-top-left-radius: 15px;
-		border-top-right-radius: 15px;
+		width: 300px;
+		height: 140px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
 	}
 
 	.photos_activites_mobile figcaption
 	{
-		padding-top: 22px;
-		padding-left: 20px;
+		padding-top: 10px;
+		padding-left: 15px;
 	}
 
 }
@@ -1170,8 +1298,6 @@ section
 }
 
 
-	/*FOOTER RESPONSIVE TABLETTE*/
-
 
 @media screen and (min-width: 769px) and (max-width: 992px)
 {
@@ -1197,19 +1323,19 @@ section
 	{
 		display: flex;
 		flex-direction: column;
-		font-size: 22px;
-		width: 500px;
-		height: 700px;
+		font-size: 17px;
+		width: 100%;
+		height: 600px;
 	}
 
 	footer p
 	{
-		line-height: 38px;
+		line-height: 30px;
 	}
 
 	.a_propos, .nos_hebergements, .assistance
 	{
-		margin-left: 20px;
+		margin-left: 40px;
 	}
 
 }
