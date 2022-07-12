@@ -179,11 +179,12 @@ header
 
 	/*PRESENTATION*/
 
-	.presentation {
-		margin-left: 20px;
-		margin-top: 50px;
-		line-height: 12px;
-	}
+.presentation 
+{
+	margin-left: 20px;
+	margin-top: 50px;
+	line-height: 12px;
+}
 
 	/*BARRE DE RECHERCHE*/
 
@@ -201,6 +202,13 @@ header
 	border-bottom-left-radius: 15px;
 	height: 50px;
 	width:  50px;
+}
+
+#logo_position svg
+{
+	height: 25px;
+	width: 25px;
+	margin-left: 15px;
 }
 
 .recherche svg
@@ -231,12 +239,14 @@ form
 	border-color: #F2F2F2;
 	box-shadow: none;
 	width: 240px;
+	height: 46px;
 }
 
 #bouton input
 {
 	display: inline-block;
-	width: 130px ;
+	width: 130px;
+	height: 50px;
 	background-color:#0065FC;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
@@ -478,6 +488,8 @@ form
 
 .pic1 img, .pic2 img, .pic3 img, .pic4 img, .pic5 img, .pic6 img
 {
+	width: 230px;
+	height: 120px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 }
@@ -595,6 +607,8 @@ form
 
 .pic7 img, .pic8 img, .pic9 img
 {
+	width: 120px;
+	height: 135px;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
@@ -681,6 +695,36 @@ form
 {
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+}
+
+.pic10 img, .pic13 img
+{
+	width: 300px;
+	height: 380px;
+}
+
+.pic11 img
+{
+	width: 300px;
+	height: 180px;
+}
+
+.pic12 img
+{
+	width: 300px;
+	height: 102px;
+}
+
+.pic14 img
+{
+	width: 300px;
+	height: 140px;
+}
+
+.pic15 img
+{
+	width: 300px;
+	height: 145px;
 }
 
 .photos_activites_ordi figcaption
@@ -804,6 +848,15 @@ form
 	{
 		margin-left: -340px;
 		margin-top: 240px;
+	}
+}
+
+@media screen and (min-width: 904px) and (max-width: 991px)
+{
+	#afficher_plus
+	{
+		margin-top: 240px;
+		margin-left: -320px;
 	}
 }
 
@@ -943,7 +996,7 @@ form
 		display: none;
 	}
 
-	#logo_position, #logo_loupe
+	#logo_position
 	{
 		display: none;
 	}
@@ -1151,7 +1204,7 @@ form
 
 	.pic1, .pic2, .pic3, .pic4, .pic5, .pic6
 	{
-		width: 300px;
+		width: 330px;
 		height: 210px;
 		border-radius: 20px;
 		margin-left: 20px;
@@ -1159,7 +1212,7 @@ form
 
 	.pic1 img, .pic2 img, .pic3 img, .pic4 img, .pic5 img, .pic6 img
 	{
-		width: 293px;
+		width: 323px;
 		height: 120px;
 		padding-left: 1px;
 		padding-top: 1px;
@@ -1209,7 +1262,7 @@ form
 	.pic_mobile1, .pic_mobile2, .pic_mobile3, .pic_mobile4, .pic_mobile5, .pic_mobile6
 	{
 		margin-left: 25px;
-		width: 300px;
+		width: 320px;
 		height: 190px;
 		background-color: #FFFFFF;
 		border-radius: 20px;
@@ -1218,7 +1271,7 @@ form
 
 	.pic_mobile1 img, .pic_mobile2 img, .pic_mobile3 img, .pic_mobile4 img, .pic_mobile5 img, .pic_mobile6 img
 	{
-		width: 300px;
+		width: 320px;
 		height: 140px;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
