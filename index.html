@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="fr">
+	
 	<head>
+		
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="style.css"/>
@@ -9,17 +12,21 @@
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/5b6670eb09.js" crossorigin="anonymous"></script>
 		<title>Booki</title>
+	
 	</head>
 
+	<!--AUTEUR : Julien BOILEAU-->
 	
 	<body>
 
 	<!--HEADER-->
 
 	<header>
+		
 		<div class="logo">
   			<img src="images/logo/Booki.png" alt="logo de Booki"/>
   		</div>
+		
 		<div class="menu">
 			<nav>
 				<ul>
@@ -28,12 +35,13 @@
 				</ul>
 			</nav>
 		</div>
+	
 	</header>
 
 
-	<section>
-
 	<!--SECTION-->
+	
+	<section>
 
 		<!--PRESENTATION-->
 	
@@ -45,17 +53,39 @@
 		<!--BARRE DE RECHERCHE-->	
 
 		<div class="recherche">
+			
 			<div id="logo_position"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-  									<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></div>
+  									<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+  									</svg>
+  			</div>
+  			
   			<div id="logo_position_mobile"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-  									<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></div>
+  									<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+  										</svg>
+  			</div>
+			
 			<form method="post" action="traitement.php">
-					<div id="champ"><input type="text" name="ville" value="    Marseille, France"/></div>
-					<div id="champ_mobile"><input type="text" name="ville" value="Marseille, France"/></div>
-					<div id="bouton"><input type="submit" value="Rechercher"/></div>
-  					<div id="logo_loupe_mobile"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-  										<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></div>
+					
+					<div id="champ">
+						<input type="text" name="ville" value="    Marseille, France"/>
+					</div>
+					
+					<div id="champ_mobile">
+						<input type="text" name="ville" value="Marseille, France"/>
+					</div>
+					
+					<div id="bouton">
+						<input type="submit" value="Rechercher"/>
+					</div>
+  					
+  					<div id="logo_loupe_mobile">
+  						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  										<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+  						</svg>
+  					</div>
+
 			</form>
+		
 		</div>	
 
 		<!--FILTRES-->
@@ -65,22 +95,34 @@
 				<h3>Filtres</h3>
 				
 				<div class="barres_filtres">
-				<figure><i id="logo_economique" class="fa-solid fa-money-bill-wave fa-sm"></i>
-					<figcaption><a href="#">Économique</a></figcaption></figure>
-				<figure><i id="logo_familial" class="fa-solid fa-child-reaching fa-lg"></i>
-					<figcaption><a href="#">Familial</a></figcaption></figure>
-				<figure><i id="logo_romantique" class="fa-solid fa-heart fa-lg"></i>
-					<figcaption><a href="#">Romantique</a></figcaption></figure>
-				<figure><i id="logo_animaux_autorises" class="fa-solid fa-dog fa-lg"></i>
-					<figcaption><a href="#"><span style="white-space: nowrap">Animaux autorisés</span></a></figcaption></figure>
+				
+					<figure><i id="logo_economique" class="fa-solid fa-money-bill-wave fa-sm"></i>
+						<figcaption><a href="#">Économique</a></figcaption>
+					</figure>
+					
+					<figure><i id="logo_familial" class="fa-solid fa-child-reaching fa-lg"></i>
+						<figcaption><a href="#">Familial</a></figcaption>
+					</figure>
+					
+					<figure><i id="logo_romantique" class="fa-solid fa-heart fa-lg"></i>
+						<figcaption><a href="#">Romantique</a></figcaption>
+					</figure>
+					
+					<figure><i id="logo_animaux_autorises" class="fa-solid fa-dog fa-lg"></i>
+						<figcaption><a href="#"><span style="white-space: nowrap">Animaux autorisés</span></a></figcaption>
+					</figure>
+				
 				</div>
+		
 		</div>
 
 		<!--PHRASE INFORMATION-->
 
 		<div class="phrase_information">
+			
 			<i class="fa-solid fa-info"></i>
 			<p>Plus de 500 logements sont disponibles dans cette ville</p>
+		
 		</div>
 
 
@@ -98,6 +140,7 @@
 					<div class="ligne_un">
 
 					<a href="#">
+						
 						<figure class="image_hebergement"><img src="images/hebergements/la_cannebiere.jpg" alt="Photo Cannebière"/>
 						<figcaption><strong>Auberge La Cannebière</strong>
 							<br>
@@ -107,9 +150,11 @@
 							</div>
 						</figcaption>
 						</figure>
+					
 					</a>
 					
 					<a href="#">
+						
 						<figure class="image_hebergement"><img src="images/hebergements/hotel_du_port.jpg" alt="Photo port"/>
 						<figcaption><strong>Hôtel du port</strong>
 							<br>
@@ -118,9 +163,11 @@
 							</div>
 						</figcaption>
 						</figure>
+					
 					</a>
 					
 					<a href="#">
+						
 						<figure class="image_hebergement"><img src="images/hebergements/hotel_les_mouettes.jpg" alt="Photo Les Mouettes"/>
 						<figcaption><strong>Hôtel Les Mouettes</strong>
 							<br>
@@ -130,6 +177,7 @@
 							</div>
 						</figcaption>
 						</figure>
+					
 					</a>
 
 					</div>
@@ -137,6 +185,7 @@
 					<div class="ligne_deux">
 					
 					<a href="#">
+						
 						<figure class="image_hebergement"><img src="images/hebergements/hotel_de_la_mer.jpg" alt="Photo La Mer"/>
 						<figcaption><strong>Hôtel de la mer</strong>
 							<br>
@@ -146,10 +195,13 @@
 							</div>
 						</figcaption>
 						</figure>
+					
 					</a>
 					
-					<a href="#"><figure class="image_hebergement"><img src="images/hebergements/auberge_le_panier.jpg" alt="Photo Le Panier"/>
-							<figcaption><strong>Auberge Le Panier</strong>
+					<a href="#">
+
+						<figure class="image_hebergement"><img src="images/hebergements/auberge_le_panier.jpg" alt="Photo Le Panier"/>
+						<figcaption><strong>Auberge Le Panier</strong>
 							<br>
 							<span class="deuxieme_ligne_photo">Nuit à partir de <strong>23€</strong></span>
 							<br>
@@ -157,10 +209,13 @@
 							</div>
 						</figcaption>
 						</figure>
+					
 					</a>
 					
-					<a href="#"><figure class="image_hebergement"><img src="images/hebergements/hotel_chez_amina.jpg" alt="Photo Chez Amina"/>
-							<figcaption><strong>Hôtel chez Amina</strong>
+					<a href="#">
+
+						<figure class="image_hebergement"><img src="images/hebergements/hotel_chez_amina.jpg" alt="Photo Chez Amina"/>
+						<figcaption><strong>Hôtel chez Amina</strong>
 							<br>
 							<span class="deuxieme_ligne_photo">Nuit à partir de 96<strong>€</strong></span>
 							<br>
@@ -168,6 +223,7 @@
 							</div>
 						</figcaption>
 						</figure>
+					
 					</a>
 
 					</div>
@@ -190,7 +246,9 @@
 				<div class="photos_populaires">
 					
 					<div class="rectangle_populaire">
+					
 					<a href="#">
+						
 						<figure class="image_populaire">
 							<img src="images/populaires/soleil_du_matin.jpg" alt="Photo Soleil du Matin"/>
 							<figcaption><strong>Hôtel Le soleil du matin</strong>
@@ -201,11 +259,15 @@
 								</div>
 							</figcaption>
 						</figure>
+					
 					</a>
+					
 					</div>
 					
 					<div class="rectangle_populaire">
+					
 					<a href="#">
+						
 						<figure class="image_populaire">
 							<img src="images/populaires/coeur_de_leau.jpg" alt="Photo Au coeur de l'eau"/>
 							<figcaption><strong>Au coeur de l'eau Chambres d'hôtes</strong>
@@ -216,10 +278,13 @@
 								</div>
 							</figcaption>
 						</figure>
+					
 					</a>
+					
 					</div>
 					
 					<div class="rectangle_populaire">
+					
 					<a href="#">
 						<figure class="image_populaire_solo">
 							<img src="images/populaires/bleu_et_blanc_S.jpg" alt="Photo Tout bleu et blanc"/>
@@ -231,7 +296,9 @@
 								</div>
 							</figcaption>
 						</figure>
+					
 					</a>
+					
 					</div>
 				
 				</div>
@@ -252,69 +319,81 @@
 				
 				<div class="groupe_un">
 				
-				<a href="#">
-					<figure class="pic10">
-						<img src="images/activites_xl/vieux_port.jpg" alt="Photo Vieux Port"/>	
-						<figcaption><strong>Vieux Port</strong>
-						</figcaption>
-					</figure>
-				</a>
+					<a href="#">
+						
+						<figure class="pic10">
+							<img src="images/activites_xl/vieux_port.jpg" alt="Photo Vieux Port"/>	
+							<figcaption><strong>Vieux Port</strong>
+							</figcaption>
+						</figure>
+					
+					</a>
 
 				</div>
 
 				<div class="groupe_deux">	
 				
-				<a href="#">
-					<figure class="pic11">
-						<img id="pic11_ordi" src="images/activites_m/pomegues.jpg" alt="Photo Fort de Pomègues"/>
-						<img id="pic11_tablette" src="images/activites_xl/pomegues.jpg" alt="Photo Fort de Pomègues"/>
-						<figcaption><strong>Fort de Pomègues</strong>
-						</figcaption>
-					</figure>
-				</a>
-				
-				<a href="#">
-					<figure class="pic12">
-						<img id="pic12_ordi" src="images/activites_m/frioul.jpg" alt="Photo Iles du Frioul"/>
-						<img id="pic12_tablette" src="images/activites_xl/frioul.jpg" alt="Photo Iles du Frioul"/>
-						<figcaption><strong>Îles du Frioul</strong>
-						</figcaption>
-					</figure>
-				</a>
+					<a href="#">
+						
+						<figure class="pic11">
+							<img id="pic11_ordi" src="images/activites_m/pomegues.jpg" alt="Photo Fort de Pomègues"/>
+							<img id="pic11_tablette" src="images/activites_xl/pomegues.jpg" alt="Photo Fort de Pomègues"/>
+							<figcaption><strong>Fort de Pomègues</strong>
+							</figcaption>
+						</figure>
+					
+					</a>
+					
+					<a href="#">
+						
+						<figure class="pic12">
+							<img id="pic12_ordi" src="images/activites_m/frioul.jpg" alt="Photo Iles du Frioul"/>
+							<img id="pic12_tablette" src="images/activites_xl/frioul.jpg" alt="Photo Iles du Frioul"/>
+							<figcaption><strong>Îles du Frioul</strong>
+							</figcaption>
+						</figure>
+					
+					</a>
 
 				</div>
 
 				<div class="groupe_trois">
 				
 				<a href="#">
+					
 					<figure class="pic13">
 						<img src="images/activites_xl/calanques.jpg" alt="Photo Calanques"/>
 						<figcaption><strong>Parc National des Calanques</strong>
 						</figcaption>
 					</figure>
+				
 				</a>	
 
 				</div>
 
 				<div class="groupe_quatre">
 				
-				<a href="#">
-					<figure class="pic14">
-						<img id="pic14_ordi" src="images/activites_m/notre_dame.jpg" alt="Photo Notre Dame de la Garde"/>
-						<img id="pic14_tablette" src="images/activites_xl/notre_dame.jpg" alt="Photo Notre Dame de la Garde"/>
-						<figcaption><strong>Notre-Dame-de-la-Garde</strong>
-						</figcaption>
-					</figure>
-				</a>
-				
-				<a href="#">
-					<figure class="pic15">
-						<img id="pic15_ordi" src="images/activites_m/longchamp.jpg" alt="Photo Parc Longchamp"/>
-						<img id="pic15_tablette" src="images/activites_xl/longchamp.jpg" alt="Photo Parc Longchamp"/>
-						<figcaption><strong>Parc Longchamp</strong>
-						</figcaption>
-					</figure>
-				</a>
+					<a href="#">
+						
+						<figure class="pic14">
+							<img id="pic14_ordi" src="images/activites_m/notre_dame.jpg" alt="Photo Notre Dame de la Garde"/>
+							<img id="pic14_tablette" src="images/activites_xl/notre_dame.jpg" alt="Photo Notre Dame de la Garde"/>
+							<figcaption><strong>Notre-Dame-de-la-Garde</strong>
+							</figcaption>
+						</figure>
+					
+					</a>
+					
+					<a href="#">
+						
+						<figure class="pic15">
+							<img id="pic15_ordi" src="images/activites_m/longchamp.jpg" alt="Photo Parc Longchamp"/>
+							<img id="pic15_tablette" src="images/activites_xl/longchamp.jpg" alt="Photo Parc Longchamp"/>
+							<figcaption><strong>Parc Longchamp</strong>
+							</figcaption>
+						</figure>
+					
+					</a>
 				
 				</div>
 
@@ -323,52 +402,65 @@
 			<div class="photos_activites_mobile">
 				
 				<a href="#">
+					
 					<figure class="pic_mobile1">
 						<img src="images/activites_xl/vieux_port.jpg" alt="Photo Vieux Port"/>	
 						<figcaption><strong>Vieux Port</strong>
 						</figcaption>
 					</figure>
+				
 				</a>	
 				
 				<a href="#">
+					
 					<figure class="pic_mobile2">
 						<img src="images/activites_xl/pomegues.jpg" alt="Photo Fort de Pomègues"/>
 						<figcaption><strong>Fort de Pomègues</strong>
 						</figcaption>
 					</figure>
+				
 				</a>
 				
 				<a href="#">
+					
 					<figure class="pic_mobile3">
 						<img src="images/activites_xl/frioul.jpg" alt="Photo Iles du Frioul"/>
 						<figcaption><strong>Îles du Frioul</strong>
 						</figcaption>
 					</figure>
+				
 				</a>
 				
 				<a href="#">
+					
 					<figure class="pic_mobile4">
 						<img src="images/activites_xl/calanques.jpg" alt="Photo Calanques"/>
 						<figcaption><strong>Parc National des Calanques</strong>
 						</figcaption>
 					</figure>
+				
 				</a>	
 				
 				<a href="#">
+					
 					<figure class="pic_mobile5">
 						<img src="images/activites_xl/notre_dame.jpg" alt="Photo Notre Dame de la Garde"/>
 						<figcaption><strong>Notre-Dame-de-la-Garde</strong>
 						</figcaption>
 					</figure>
+				
 				</a>
 				
 				<a href="#">
+					
 					<figure class="pic_mobile6">
 						<img src="images/activites_xl/longchamp.jpg" alt="Photo Parc Longchamp"/>
 						<figcaption><strong>Parc Longchamp</strong>
 						</figcaption>
 					</figure>
+				
 				</a>
+			
 			</div>
 		
 		</div>
@@ -383,28 +475,37 @@
 			<div class="contenu_footer">
 
 				<div class="a_propos">
+					
 					<h3>A propos</h3>
+					
 					<p>
 					<a href="#"><br>Fonctionnement du site</a>
 					<a href="#"><br>Conditions générales de vente</a>
 					<a href="#"><br>Données et confidentialité</a>
 					</p>
+				
 				</div>
 
 				<div class="nos_hebergements">
+					
 					<h3>Nos hébergements</h3>
+					
 					<p>
 					<a href="#"><br>Charte qualité</a>
 					<a href="#"><br>Soumettre votre hôtel</a>
 					</p>
+				
 				</div>
 
 				<div class="assistance">
+					
 					<h3>Assistance</h3>
+					
 					<p>
 					<a href="#"><br>Centre d'aide</a>
 					<a href="#"><br>Nous contacter</a>
 					</p>
+				
 				</div>
 
 			</div>
@@ -412,7 +513,9 @@
 	</footer>
     
     <!-- FIN FOOTER -->
+	
 	</body>
+
 </html>
 		
 

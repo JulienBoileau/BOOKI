@@ -448,7 +448,7 @@ form
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
-	margin-left: 20px;
+	margin-left: 17px;
 	margin-right: 20px;
 }
 
@@ -501,7 +501,7 @@ form
 {
 	font-size: 18px;
 	padding-top: 15px;
-	margin-left: 45px;
+	margin-left: 35px;
 	margin-bottom: 40px;
 }
 
@@ -919,6 +919,7 @@ form
 
 	#afficher_plus
 	{
+		margin-left: 45px;
 		margin-bottom: 40px;
 		padding-top: 0;
 	}
@@ -1142,6 +1143,7 @@ form
 	{
 		display: flex;
 		flex-wrap: wrap;
+		max-width: 95%;
 		margin-top: 0px;
 	}
 
@@ -1219,9 +1221,9 @@ form
 
 	#etoile_populaire
 	{
+		margin-left: 0;
 		font-size: 26px;
-		margin-left: 86%;
-		margin-top: -50px;
+		margin-top: 23px;
 	}
 
 	.populaires
@@ -1265,8 +1267,9 @@ form
 
 	.photos_populaires a
 	{
-		margin-left: 30px;
-		width: 87%;
+		margin-left: 0;
+		margin: auto;
+		width: 88%;
 	}
 
 	.photos_populaires i
@@ -1291,7 +1294,11 @@ form
 
 	#les_plus_populaires, #hebergements_a_marseille
 	{
-		margin-left: 30px;
+		display: flex;
+		justify-content: space-between;
+		white-space: nowrap;
+		width: 88%;
+		margin: auto;
 	}
 
 	.annonces_hebergements
@@ -1311,12 +1318,12 @@ form
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		margin-left: 0px;
-		margin-right: 0px;
+		margin: auto;
 	}
 
 	.image_hebergement
 	{
+		width: 86%;
 		height: 180px;
 		padding-left: 5px;
 		padding-right: 5px;
@@ -1332,12 +1339,15 @@ form
 	{
 		display: flex;
 		flex-direction: column;
-		margin-left: 30px;
+		width: 100%;
+		margin:auto;
 	}
 
 	.photos_hebergements a
 	{
-		width: 90%;
+		display: flex;
+		justify-content: center;
+		width: 100%;
 		margin-bottom: 20px;
 	}
 
@@ -1359,7 +1369,11 @@ form
 
 	#afficher_plus
 	{
-		margin-left: 30px;
+		display: flex;
+	    justify-content: space-between;
+	    white-space: nowrap;
+	    width: 88%;
+	    margin: auto;
 		padding-top: 0;
 	}
 
@@ -1378,8 +1392,11 @@ form
 
 	#activites_a_marseille
 	{
+		display: flex;
+	    justify-content: space-between;
+	    width: 88%;
+	    margin: auto;
 		margin-top: 0px;
-		margin-left: 30px;
 		margin-bottom: 10px;
 		font-size: 22px;
 	}
@@ -1393,14 +1410,15 @@ form
 	{
 		display: flex;
 		flex-direction: column;
-		width: 92%;
-		margin-left: 30px;
+		width: 100%;
+		margin: auto;
 	}
 
 	.photos_activites_mobile figure
 	{
+		width: 88%;
 		margin-inline: 0;
-		margin: 0;
+		margin: auto;
 	}
 
 	.photos_activites_mobile a
@@ -1410,8 +1428,7 @@ form
 
 	.pic_mobile1, .pic_mobile2, .pic_mobile3, .pic_mobile4, .pic_mobile5, .pic_mobile6
 	{
-		width: 94
-		%;
+		width: 94%;
 		height: 190px;
 		background-color: #FFFFFF;
 		border-radius: 20px;
@@ -1435,18 +1452,23 @@ form
 
 }
 
-	@media screen and (max-width: 320px)
+@media screen and (max-width: 360px)
+{
+	.image_populaire
 	{
-		.image_populaire
-		{
-			height: 170px;
-		}
-
-		.image_populaire img
-		{
-			height: 165px;
-		}
+		height: 165px;
 	}
+
+	.image_populaire img
+	{
+		height: 160px;
+	}
+
+	#hebergements_a_marseille p
+	{
+		white-space: normal;
+	}
+}
 
 	/*FIN DU MAIN*/
 
@@ -1478,45 +1500,20 @@ form
 
 	.contenu_footer
 	{
-		width: 100%;
-		max-width: 1350px;
-		margin-left: 35px;
+		width: 1400px;
+		margin: auto;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
 		justify-content: flex-start;
 	}
 
 	.a_propos, .nos_hebergements, .assistance
 	{
-		width: 400px;
+		max-width: 400px;
+		width: 30%;
+		margin-left: 40px;
 		line-height: 30px;
 	}
-
-
-	/*FOOTER RESPONSIVE REDUCTION*/
-
-
-@media screen and (min-width: 992px) and (max-width: 1260px)
-{
-	.contenu_footer
-	{
-		margin-left: 75px;
-	}
-}
-
-
-	/*FOOTER RESPONSIVE TABLETTE*/
-
-@media screen and (min-width: 768px) and (max-width: 991px)
-{
-	.contenu_footer
-	{
-		display: flex;
-		justify-content: space-around;
-		margin-left: 35px;
-	}
-}
 
 
 
@@ -1528,7 +1525,7 @@ form
 	{
 		font-size: 17px;
 		width: 100%;
-		height: 560px;
+		height: 500px;
 	}
 
 	footer p
@@ -1538,13 +1535,15 @@ form
 
 	.a_propos, .nos_hebergements, .assistance
 	{
-		margin-left: 40px;
+		width: 70%;
+		margin-left: 7%;
 	}
 
 	.contenu_footer
 	{
 		display: flex;
 		flex-direction: column;
+		margin-top: 0;
 	}
 
 }
